@@ -1,6 +1,6 @@
 export default {
-	name: 'primaryproject',
-	title: 'PrimaryProject',
+	name: 'project',
+	title: 'Project',
 	type: 'document',
 	fields: [
 		{
@@ -27,6 +27,21 @@ export default {
 			name: 'linkcode',
 			title: 'Link to github',
 			type: 'url',
+		},
+		{
+			name: 'tech',
+			title: 'Skill',
+			type: 'array',
+			of: [{ type: 'string' }],
+			options: {
+				list: [
+					{ title: 'Design', value: 'design' },
+					{ title: 'HTML', value: 'html' },
+					{ title: 'CSS', value: 'css' },
+					{ title: 'JavaScript', value: 'javascript' },
+					{ title: 'Tailwind', value: 'tailwind' },
+				],
+			}
 		},
 	]
 }
