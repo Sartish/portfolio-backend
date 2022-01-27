@@ -4,6 +4,11 @@ export default {
 	type: 'document',
 	fields: [
 		{
+			name: 'id',
+			title: 'ID',
+			type: 'number',
+		},
+		{
 			name: 'image',
 			title: 'Image',
 			type: 'image',
@@ -22,6 +27,7 @@ export default {
 			name: 'text',
 			title: 'Text',
 			type: 'string',
+			maxLength: 100,
 		},
 		{
 			name: 'linkcode',
@@ -35,11 +41,22 @@ export default {
 			of: [{ type: 'string' }],
 			options: {
 				list: [
-					{ title: 'Design', value: 'design' },
-					{ title: 'HTML', value: 'html' },
-					{ title: 'CSS', value: 'css' },
-					{ title: 'JavaScript', value: 'javascript' },
-					{ title: 'Tailwind', value: 'tailwind' },
+					{ title: 'Design ', value: ' design ' },
+					{ title: 'HTML ', value: ' html ' },
+					{ title: 'CSS ', value: ' css ' },
+					{ title: 'JavaScript ', value: ' javascript ' },
+					{ title: ' Tailwind ', value: 'tailwind ' },
+					{ title: ' React ', value: ' React ' },
+					{ title: ' Redux ', value: ' Redux ' },
+					{ title: ' TypeScript ', value: ' Typescript ' },
+					{ title: ' Sanity ', value: ' Sanity ' },
+					{ title: ' MongoDB ', value: ' MongoDB ' },
+					{ title: ' Express', value: ' Express ' },
+					{ title: ' API ', value: ' API ' },
+					{ title: ' Responsive ', value: ' Responsive ' },
+					{ title: ' Nodejs ', value: ' Nodejs ' },
+					{ title: ' Sass ', value: ' Sass ' },
+					{ title: ' Nextjs ', value: ' Nextjs' },
 				],
 			}
 		},
